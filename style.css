@@ -4,6 +4,8 @@ body{
     position:absolute;
     top: 20%;
     left: 40%;
+    
+    
 
 }
 
@@ -19,6 +21,7 @@ body{
     display:flex;
     justify-content: center;
     border-radius: 25px;
+    background: linear-gradient(234deg, grey, lightslategrey, black);
 
 }
 
@@ -28,15 +31,16 @@ body{
     align-items: center;;
     height: 100px;
     width: 440px;
-    background: gray;
+    background: black;
     margin: 25px;
     border-radius: 15px;
 }
 
 #display-number{
-    display:flex;
-    
-    align-items: flex-end;
+    color: white;
+    font-size: 36px;
+
+
 }
 
 #equal-sign {
@@ -45,8 +49,8 @@ body{
     align-items: center;;
     height: 90px;
     width: 90px;
-    background: gray;
-    border-radius: 15px;
+    background: grey;
+    border-radius: 50px;
     position: absolute;
     top: 80%;
     left: 73%;
@@ -63,7 +67,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 65%;
     left: 73%;
@@ -79,7 +83,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 50%;
     left: 73%;
@@ -97,7 +101,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 35%;
     left: 73%;
@@ -114,7 +118,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 20%;
     left: 73%;
@@ -131,7 +135,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 20%;
     left: 10%;
@@ -149,7 +153,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 20%;
     left: 30%;
@@ -166,7 +170,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -183,7 +187,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 35%;
     left: 10%;
@@ -200,7 +204,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 35%;
     left: 30%;
@@ -217,7 +221,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -234,7 +238,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 50%;
     left: 10%;
@@ -251,7 +255,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 50%;
     left: 30%;
@@ -268,7 +272,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -285,7 +289,7 @@ body{
     height: 90px;
     width: 90px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 65%;
     left: 30%;
@@ -302,7 +306,7 @@ body{
     height: 90px;
     width: 300px;
     background: gray;
-    border-radius: 15px;
+    border-radius: 50px;
     position: absolute;
     top: 80%;
     left: 11%;
