@@ -19,7 +19,7 @@ Day 2 9:51AM (1/18/2022) : Laid out all the button for now and added a mouseover
 
     4:06PM : basic variables set for now. Not sure if i am doing it correctly but i hope to understand how to assign math properties to it. (total result, number 1, number 2, and operator)
 
-    5:01PM: add operator formulas.
+    5:01PM: add function operator formulas.
             - a + b
             - a - b
             - a * b
