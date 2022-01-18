@@ -16,3 +16,5 @@ Day 2 9:51AM (1/18/2022) : Laid out all the button for now and added a mouseover
     2:34PM : Write basic math logic in js file in comments form.
 
     3:16PM : gonna have to review old lessons to figure out some logical stuff.
+
+    4:06PM : basic variables set for now. Not sure if i am doing it correctly but i hope to understand how to assign math properties to it. (total result, number 1, number 2, and operator)
