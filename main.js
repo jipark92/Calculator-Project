@@ -96,8 +96,31 @@ function numberPads(){
 }
 numberPads();
 
+/*
+let result = "" ;
+let number1 = "";
+let number2 = "";
+
+function totalResult(){
+    if (operator === '+')
+        result = number1 + number2;
+    }
+    else if (operator =='-'){
+        result = number1 - number2;
+    }
+    else if (operator === 'x'){
+        result = number1 * number2;
+    }
+    else {
+        result = number1 / number2;
+    }
+*/
+
 //writing down the logic
 //when a number is pressed, assign it to a variable
 //then operator is pressed, assign the operator next to the variable
 //then press another number to assign it to second variable
-//finally, press the equal sign to get total of 2 numbers.
+//example: so it shows up as "number1 + number2 = result variable"
+//finally, press the equal sign to get total of 2 numbers and display
+    //it on the calculator.
+
