@@ -20,7 +20,18 @@ const btnClear = document.querySelector('#btn-clear');
 
  
 
-
+function addFormula (a,b){
+    return a + b;
+}
+function minusFormula (a,b){
+    return a - b;
+}
+function multiplyFormula (a,b){
+    return a * b;
+}
+function divideFormula (a,b){
+    return a / b;
+}
 
 
 function operate (){
@@ -58,49 +69,63 @@ clear();
 function numberPads(){
     btnOne.addEventListener('click', ()=> {
         display.textContent = "1";
+        return 1
+        
     }),
 
     btnTwo.addEventListener('click', ()=> {
         display.textContent = "2";
+        return 2
     }),
 
     btnThree.addEventListener('click', ()=> {
         display.textContent = "3";
+        return 3
     }),
 
     btnFour.addEventListener('click', ()=> {
         display.textContent = "4";
+        return 4
     }),
 
     btnFive.addEventListener('click', ()=> {
         display.textContent = "5";
+        return 5
     }),
 
     btnSix.addEventListener('click', ()=> {
         display.textContent = "6";
+        return 6
     }),
     btnSeven.addEventListener('click', ()=> {
         display.textContent = "7";
+        return 7
     }),
     btnEight.addEventListener('click', ()=> {
         display.textContent = "8";
+        return 8
     }),
 
     btnNine.addEventListener('click', ()=> {
         display.textContent = "9";
+        return 9
     }),
 
     btnZero.addEventListener('click', ()=> {
         display.textContent = "0";
+        return 0
     })
 }
 numberPads();
 
 
 let result = "" ;
-let number1 = "";
-let number2 = "";
+let numberA = numberPads();
+let numberB = "";
 let operator = ['+', '-', '*', '/'];
+
+console.log(numberA);
+
 /*
 
 
