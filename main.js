@@ -93,7 +93,11 @@ function numberPads(){
     btnZero.addEventListener('click', ()=> {
         display.textContent = "0";
     })
-
-
 }
 numberPads();
+
+//writing down the logic
+//when a number is pressed, assign it to a variable
+//then operator is pressed, assign the operator next to the variable
+//then press another number to assign it to second variable
+//finally, press the equal sign to get total of 2 numbers.
