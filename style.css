@@ -1,0 +1,229 @@
+body{
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    top: 20%;
+    left: 40%;
+
+}
+
+
+
+
+
+
+.main-container{
+    background-color: black;
+    height: 700px;
+    width:350px;
+    display:flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 100px;
+    width: 300px;
+    background: gray;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+#equal-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#plus-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#minus-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#mulitply-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#divide-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#btn-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#btn-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#btn-three{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#btn-four{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#btn-five{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#btn-six{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#btn-seven{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#btn-eieght{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
+
+#btn-nine{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    height: 90px;
+    width: 90px;
+    background: gray;
+    border-radius: 15px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 48px;
+}
