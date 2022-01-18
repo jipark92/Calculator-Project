@@ -96,10 +96,13 @@ function numberPads(){
 }
 numberPads();
 
-/*
+
 let result = "" ;
 let number1 = "";
 let number2 = "";
+let operator = ['+', '-', '*', '/'];
+/*
+
 
 function totalResult(){
     if (operator === '+')
