@@ -12,3 +12,5 @@ Day 2 9:51AM (1/18/2022) : Laid out all the button for now and added a mouseover
     
         -note: I have to somehow assign numbers and operators to a variable, so i can later add,subtract,multiply, and divide with two numbers.
         (difficult javascript parts now)
+
+    2:34PM : Write basic math logic in js file in comments form.
