@@ -36,12 +36,24 @@ body{
     border-radius: 15px;
 }
 
-#display-number{
+#history-display{
     color: white;
     font-size: 36px;
-
-
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    border: white solid white;
+    
 }
+
+#total-display{
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
 
 #equal-sign {
     display: flex;
@@ -305,7 +317,7 @@ body{
     align-items: center;;
     height: 90px;
     width: 300px;
-    background: silver;
+    background: darkgray;
     border-radius: 50px;
     position: absolute;
     top: 80%;
