@@ -7,4 +7,25 @@ const deleteBtn = document.querySelector('.delete-sign');
 const equalBtn = document.querySelector('.equal-sign');
 
 
-console.log(operands);
+//variables 
+let operandsA = 0;
+let operandsB = 0;
+let operatorSign = null;
+
+let currNumber = currDisplay;
+
+
+
+
+//make operands work
+
+function submitOperands() {
+    operands.forEach((operand) => {
+        operand.addEventListener('click', ()=>{
+            // console.log(operand.textContent);
+            currDisplay.textContent += operand.textContent;
+            console.log(currNumber);
+        })
+    })
+}
+submitOperands();
