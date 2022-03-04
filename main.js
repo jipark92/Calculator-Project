@@ -22,7 +22,7 @@ let currNumber = currDisplay;
 function submitOperands() {
     operands.forEach((operand) => {
         operand.addEventListener('click', ()=>{
-            // console.log(operand.textContent);
+            console.log(operand.textContent);
             currDisplay.textContent += operand.textContent;
             console.log(currNumber);
         })
