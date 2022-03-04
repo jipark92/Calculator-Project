@@ -8,25 +8,35 @@ body{
 
 .container{
   display: grid;
-  grid-template-columns: repeat(1, 250px);
-  grid-template-rows: repeat(2,minmax(50px,252px));
+  grid-template-columns: repeat(1, 220px);
+  grid-template-rows: repeat(1,minmax(50px,50px));
   background-color: lightblue;
+  
 }
 
 .display-container {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    font-size: 1.2rem;
 }
 
 .button-container {
     border: 1px solid black;
-
+    
 }
 
 button {
     height: 50px;
     width: 50px;
+}
+
+button {
+    font-size: 1.2rem;
+}
+
+.equal-sign {
+    width: 13.45rem;;
 }
