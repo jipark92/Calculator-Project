@@ -36,7 +36,8 @@ function calculatorProject(){
             operators.forEach((operator)=> {
                 operator.addEventListener('click', ()=>{
                     operatorSign = operator.value;
-                    prevDisplay.textContent += operatorSign.slice(0,-1);
+                    prevDisplay.textContent += operatorSign;
+                    prevDisplay.textContent = prevDisplay.textContent.slice(0,-1);
                 })
             })
         };
@@ -47,7 +48,8 @@ function calculatorProject(){
                 // console.log(operandsB, "b")
                 // checks for error and operate total result
                 if (!operandsB){
-                    prevDisplay.textContent = "ERROR:clear and enter proper number";
+                    return
+                    // prevDisplay.textContent = "ERROR:clear and enter proper number";
                 } else if (operatorSign === '+'){
                     prevDisplay.textContent = parseInt(operandsA) + parseInt(operandsB) ;
                     currDisplay.textContent = "";
@@ -68,7 +70,7 @@ function calculatorProject(){
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
-                }
+                } 
             })
         };
         eqaulButton();
@@ -103,3 +105,10 @@ function calculatorProject(){
     allButtons();
 }
 calculatorProject();
+
+
+
+// else if (prevDisplay.textContent === "0" && currDisplay.textContent === "0"){
+//     prevDisplay.textContent = "you cant divide 0/0!";
+//     currDisplay.textContent = "you cant divide 0/0!";
+// }
