@@ -90,10 +90,10 @@ function calculatorProject(){
         //make delete work
         function deleteButton() {
             deleteBtn.addEventListener('click',()=>{
-                prevDisplay.textContent = operandsA.slice(0,-1);
-                prevDisplay.textContent.slice(0,-1);
-                console.log(operandsA, 'click');
-                console.log(prevDisplay.textContent, 'click');
+                prevDisplay.textContent = prevDisplay.textContent.slice(0,-1);
+                operandsA = prevDisplay.textContent
+                // console.log(operandsA, 'click');
+                // console.log(prevDisplay.textContent, 'click');
             })
         }
         deleteButton();
