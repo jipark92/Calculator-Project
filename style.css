@@ -9,7 +9,7 @@ body{
 .container{
   display: grid;
   grid-template-columns: repeat(1, 220px);
-  grid-template-rows: repeat(1,minmax(50px,50px));
+  grid-template-rows: repeat(1,minmax(50px,150px));
   background-color: lightblue;
   
 }
@@ -34,14 +34,9 @@ button {
     font-size: 1.2rem;
 }
 
-/* button:hover {
-   cursor: pointer;
-   background-color: red;
-} */
-
 #operators:focus {
     background-color: red;
- }
+}
 
 .equal-sign {
     width: 13.45rem;;
