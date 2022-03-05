@@ -31,11 +31,17 @@ body{
 button {
     height: 50px;
     width: 50px;
-}
-
-button {
     font-size: 1.2rem;
 }
+
+/* button:hover {
+   cursor: pointer;
+   background-color: red;
+} */
+
+#operators:focus {
+    background-color: red;
+ }
 
 .equal-sign {
     width: 13.45rem;;
