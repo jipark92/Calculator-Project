@@ -6,51 +6,56 @@ const clearBtn = document.querySelector('.clear-sign');
 const deleteBtn = document.querySelector('.delete-sign');
 const equalBtn = document.querySelector('.equal-sign');
 const operatorDisplay = document.querySelector('.operator-display');
-
-
 //variables 
 let operandsA = "";
 let operatorSign = "";
 let operandsB = "";
-// let operatoSign = submitOperator(); 
-
-
-
-
-
 //make operands work
 function submitOperandsA() {
     operands.forEach((operand) => {
         operand.addEventListener('click', ()=>{
-            if (!prevDisplay.textContent.includes('+', '-', '/', '*')){
+            if (!operatorSign){
                 operandsA += operand.value;
                 prevDisplay.textContent = operandsA
                 console.log(operandsA, "op1")
-            }
-
-
-
-            
-            else if (prevDisplay.textContent.includes('+', '-', '/', '*')){
+            } 
+            else if (operatorSign === "-"||operatorSign === "+"||operatorSign === "*"||operatorSign === "/"){
                 operandsB += operand.value;
-                prevDisplay.textContent += operandsB
+                currDisplay.textContent = operandsB
                 console.log(operandsB, "op2")
             }
         })
     })
 };
 submitOperandsA();
+//make operators work
+function submitOperator() {
+    operators.forEach((operator)=> {
+        operator.addEventListener('click', ()=>{
+            operatorSign = operator.value
+            prevDisplay.textContent += operatorSign;
+            console.log(operatorSign)
+        })
+    })
+};
+submitOperator();
+//make equal button work
+function totalResults(){
+    
+}
 
-// function submitOperandsB() {
-//     operands.forEach((operand) => {
-//         operand.addEventListener('click', ()=>{
-//             currDisplay.textContent += operand.textContent;
-//             // console.log(currDisplay.textContent)
-//             operandsB = currDisplay.textContent;
-//             console.log(operandsB)
-//         })
-//     })
-// };
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -71,36 +76,3 @@ submitOperandsA();
 //     })
 // }
 // totalResult();
-
-
-
-// if (currDisplay.textContent.includes('+', '-', '/', '*')){
-                
-// }
-
-function submitOperator() {
-    operators.forEach((operator)=> {
-        operator.addEventListener('click', ()=>{
-            operatorSign = operator.value;
-            prevDisplay.textContent += operator.value;
-            console.log(operatorSign)
-            // console.log(operatorSign);
-            // if (currDisplay.textContent.includes('+')){
-            //     console.log(currDisplay.textContent)
-            //     return  "+";
-               
-            // } else if (currDisplay.textContent.includes('-')){
-            //     return  "-";
-                
-            // } else if (currDisplay.textContent.includes('*')){
-            //     return  "*";
-                
-            // } else if (currDisplay.textContent.includes('/')){
-            //     return  "/";
-            // }
-        })
-        
-    })
-
-};
-submitOperator();
