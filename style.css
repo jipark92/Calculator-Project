@@ -9,7 +9,7 @@ body{
 .container{
   display: grid;
   grid-template-columns: repeat(1, 220px);
-  grid-template-rows: repeat(1,minmax(50px,150px));
+  grid-template-rows: repeat(1,minmax(50px,75px));
   background-color: lightblue;
   
 }
