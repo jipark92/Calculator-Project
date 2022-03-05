@@ -1,4 +1,4 @@
-function calculatorProject(){
+function calculator(){
     const prevDisplay = document.querySelector('.prev-display');
     const currDisplay = document.querySelector('.curr-display');
     const operands = document.querySelectorAll('.operands');
@@ -93,7 +93,7 @@ function calculatorProject(){
     }
     allButtons();
 }
-calculatorProject();
+calculator();
 
 
 
