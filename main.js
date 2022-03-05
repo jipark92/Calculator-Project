@@ -68,9 +68,6 @@ function calculatorProject(){
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
-                } else if (operatorSign && !operandsB) {
-                    totalResult.textContent = "error"
-                    totalResult = totalResult.textContent
                 }
             })
         };
@@ -90,10 +87,16 @@ function calculatorProject(){
         //make delete work
         function deleteButton() {
             deleteBtn.addEventListener('click',()=>{
-                prevDisplay.textContent = prevDisplay.textContent.slice(0,-1);
-                operandsA = prevDisplay.textContent
-                // console.log(operandsA, 'click');
-                // console.log(prevDisplay.textContent, 'click');
+                if (!operatorSign){
+                   //deletes operandA text
+                    prevDisplay.textContent = prevDisplay.textContent.slice(0,-1);
+                    operandsA = prevDisplay.textContent ;
+                } 
+                //deletes operandB text
+                else if (operatorSign === "-"||operatorSign === "+"||operatorSign === "*"||operatorSign === "/"){
+                    currDisplay.textContent =currDisplay.textContent.slice(0,-1);
+                    operandsB = currDisplay.textContent;
+                }
             })
         }
         deleteButton();
