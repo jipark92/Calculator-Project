@@ -88,12 +88,11 @@ function calculatorProject(){
         function deleteButton() {
             deleteBtn.addEventListener('click',()=>{
                 if (!operatorSign){
-                   //deletes operandA text
+                    //deletes operandA text
                     prevDisplay.textContent = prevDisplay.textContent.slice(0,-1);
                     operandsA = prevDisplay.textContent ;
-                } 
-                //deletes operandB text
-                else if (operatorSign === "-"||operatorSign === "+"||operatorSign === "*"||operatorSign === "/"){
+                }   //deletes operandB text
+                    else if (operatorSign === "-"||operatorSign === "+"||operatorSign === "*"||operatorSign === "/"){
                     currDisplay.textContent =currDisplay.textContent.slice(0,-1);
                     operandsB = currDisplay.textContent;
                 }
