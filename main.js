@@ -35,8 +35,10 @@ function calculatorProject(){
         function submitOperator() {
             operators.forEach((operator)=> {
                 operator.addEventListener('click', ()=>{
+                   
                     operatorSign = operator.value;
                     prevDisplay.textContent += operatorSign;
+                 
                 })
             })
         };
@@ -44,7 +46,10 @@ function calculatorProject(){
         //make equal/total work
         function eqaulButton(){
             equalBtn.addEventListener('click',()=>{
-                if (operatorSign === '+'){
+                // console.log(operandsB, "b")
+                if (!operandsB){
+                    prevDisplay.textContent = "ERROR:clear and enter 2nd number";
+                } else if (operatorSign === '+'){
                     prevDisplay.textContent = parseInt(operandsA) + parseInt(operandsB) ;
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
@@ -64,8 +69,9 @@ function calculatorProject(){
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
-                } else if (operatorSign && operandsB === String) {
-                    prevDisplay.textContent = "error"
+                } else if (operatorSign && !operandsB) {
+                    totalResult.textContent = "error"
+                    totalResult = totalResult.textContent
                 }
             })
         };
