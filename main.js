@@ -11,6 +11,7 @@ let operatorSign = "";
 let operandsB = "";
 let totaResult = "";
 
+let show = allButtons;
 function allButtons(){
     function submitOperands() {
         operands.forEach((operand) => {
