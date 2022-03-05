@@ -47,8 +47,20 @@ function calculatorProject(){
             equalBtn.addEventListener('click',()=>{
                 // console.log(operandsB, "b")
                 // checks for error and operate total result
-                if (!operandsB){
-                    return
+                if (!operandsB || operandsB.includes('0')){
+                    prevDisplay.textContent = "you can divide 0";
+                    currDisplay.textContent = "";
+                    operandsA = "";
+                    operandsB = "";
+                    totalResult = "";
+                    setTimeout(()=>{
+                        prevDisplay.textContent = "";
+                        currDisplay.textContent = "";
+                        operandsA = "";
+                        operandsB = "";
+                        operatorSign = "";
+                        totalResult = "";
+                    },300)
                     // prevDisplay.textContent = "ERROR:clear and enter proper number";
                 } else if (operatorSign === '+'){
                     prevDisplay.textContent = parseInt(operandsA) + parseInt(operandsB) ;
