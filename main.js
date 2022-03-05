@@ -9,6 +9,7 @@ const equalBtn = document.querySelector('.equal-sign');
 let operandsA = "";
 let operatorSign = "";
 let operandsB = "";
+let totaResult = "";
 //make operands work
 function submitOperands() {
     //make operands work
@@ -48,13 +49,13 @@ function totalResults(){
             prevDisplay.textContent = parseInt(operandsA) + parseInt(operandsB) ;
         } else if (operatorSign === '-'){
             console.log('- clicked');
-            prevDisplay.textContent = operandsA - operandsB;
+            prevDisplay.textContent = parseInt(operandsA) - parseInt(operandsB);
         } else if (operatorSign === '*'){
             console.log('* clicked');
-            prevDisplay.textContent = operandsA * operandsB;
+            prevDisplay.textContent = parseInt(operandsA) * parseInt(operandsB);
         } else if (operatorSign === '/'){
             console.log('/ clicked');
-            prevDisplay.textContent = operandsA / operandsB;
+            prevDisplay.textContent = parseInt(operandsA) / parseInt(operandsB);
         }
         
     })
