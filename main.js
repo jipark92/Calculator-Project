@@ -1,4 +1,4 @@
-function calculator(){
+function calculatorProject(){
     const prevDisplay = document.querySelector('.prev-display');
     const currDisplay = document.querySelector('.curr-display');
     const operands = document.querySelectorAll('.operands');
@@ -6,14 +6,14 @@ function calculator(){
     const clearBtn = document.querySelector('.clear-sign');
     const deleteBtn = document.querySelector('.delete-sign');
     const equalBtn = document.querySelector('.equal-sign');
-
+    //variables 
     let operandsA = "";
     let operatorSign = "";
     let operandsB = "";
-    let totaResult = "";
-
-    let show = allButtons;
+    let totalResult = "";
+    //make buttons work
     function allButtons(){
+        //make operands work
         function submitOperands() {
             operands.forEach((operand) => {
                 operand.addEventListener('click', ()=>{
@@ -31,6 +31,7 @@ function calculator(){
             })
         };
         submitOperands();
+        //make operators work
         function submitOperator() {
             operators.forEach((operator)=> {
                 operator.addEventListener('click', ()=>{
@@ -40,6 +41,7 @@ function calculator(){
             })
         };
         submitOperator();
+        //make equal/total work
         function eqaulButton(){
             equalBtn.addEventListener('click',()=>{
                 if (operatorSign === '+'){
@@ -47,29 +49,28 @@ function calculator(){
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
-                    return;
                 } else if (operatorSign === '-'){
                     prevDisplay.textContent = parseInt(operandsA) - parseInt(operandsB);
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
-                    return;
                 } else if (operatorSign === '*'){
                     prevDisplay.textContent = parseInt(operandsA) * parseInt(operandsB);
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
-                    return;
                 } else if (operatorSign === '/'){
                     prevDisplay.textContent = parseInt(operandsA) / parseInt(operandsB);
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
-                    return;
+                } else if (operatorSign && operandsB === String) {
+                    prevDisplay.textContent = "error"
                 }
             })
         };
         eqaulButton();
+        //make clear work
         function clearButton(){
             clearBtn.addEventListener('click',()=>{
                 prevDisplay.textContent = "";
@@ -77,10 +78,11 @@ function calculator(){
                 operandsA = "";
                 operandsB = "";
                 operatorSign = "";
-                totaResult = "";
+                totalResult = "";
             })
         };
         clearButton();
+        //make delete work
         function deleteButton() {
             deleteBtn.addEventListener('click',()=>{
                 prevDisplay.textContent = operandsA.slice(0,-1);
@@ -93,11 +95,15 @@ function calculator(){
     }
     allButtons();
 }
-calculator();
+calculatorProject();
 
 
 
-
+// function checkError(){
+//     if (operandsB === ""){
+//         prevDisplay.textContent = "error";
+//     }
+// }
 
 
     // if (!operatorSign){
