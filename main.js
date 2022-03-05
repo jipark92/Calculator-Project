@@ -1,3 +1,4 @@
+//title of project for fun
 function calculatorProject(){
     const prevDisplay = document.querySelector('.prev-display');
     const currDisplay = document.querySelector('.curr-display');
@@ -47,20 +48,16 @@ function calculatorProject(){
             equalBtn.addEventListener('click',()=>{
                 // console.log(operandsB, "b")
                 // checks for error and operate total result
-                if (!operandsB || operandsB.includes('0')){
-                    prevDisplay.textContent = "you can divide 0";
+                if (operandsB && operandsB.includes('0')){
+                    prevDisplay.textContent = "you can't divide 0!";
                     currDisplay.textContent = "";
                     operandsA = "";
                     operandsB = "";
+                    operatorSign = "";
                     totalResult = "";
                     setTimeout(()=>{
                         prevDisplay.textContent = "";
-                        currDisplay.textContent = "";
-                        operandsA = "";
-                        operandsB = "";
-                        operatorSign = "";
-                        totalResult = "";
-                    },300)
+                    },100)
                     // prevDisplay.textContent = "ERROR:clear and enter proper number";
                 } else if (operatorSign === '+'){
                     prevDisplay.textContent = parseInt(operandsA) + parseInt(operandsB) ;
