@@ -49,7 +49,7 @@ function calculatorProject(){
                 // console.log(operandsB, "b")
                 // checks for error and operate total result
                 if (operatorSign === "/"  && operandsB === "0" || operatorSign === "+" && operandsB === "" || operatorSign === "-" && operandsB === ""  || operatorSign === "*" && operandsB === "" || operatorSign === "/" && operandsB === ""){
-                    prevDisplay.textContent = "you can't do that!";
+                    prevDisplay.textContent = "you can't divide by 0 or empty input!";
                     currDisplay.textContent = "";
                     operandsA = "";
                     operandsB = "";
@@ -57,7 +57,7 @@ function calculatorProject(){
                     totalResult = "";
                     setTimeout(()=>{
                         prevDisplay.textContent = "";
-                    },300)
+                    },2000)
                 } else if (operatorSign === '+'){
                     prevDisplay.textContent = parseInt(operandsA) + parseInt(operandsB) ;
                     currDisplay.textContent = "";
