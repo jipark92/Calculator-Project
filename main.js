@@ -7,13 +7,17 @@ function calculatorProject(){
     const clearBtn = document.querySelector('.clear-sign');
     const deleteBtn = document.querySelector('.delete-sign');
     const equalBtn = document.querySelector('.equal-sign');
+    const decimalBtn = document.querySelector('.decimal-button');
+    
     //variables 
     let operandsA = "";
     let operatorSign = "";
     let operandsB = "";
     let totalResult = "";
+
     //make buttons work
     function allButtons(){
+
         //make operands work
         function submitOperands() {
             operands.forEach((operand) => {
@@ -21,17 +25,18 @@ function calculatorProject(){
                     if (!operatorSign){
                         operandsA += operand.value;
                         prevDisplay.textContent = operandsA;
-                        // console.log(operandsA, "op1");  
+                        console.log(operandsA, "op1");  
                     } 
                     else if (operatorSign === "-"||operatorSign === "+"||operatorSign === "*"||operatorSign === "/"){
                         operandsB += operand.value;
                         currDisplay.textContent = operandsB;
-                        // console.log(operandsB, "op2");
+                        console.log(operandsB, "op2");
                     }
                 })
             })
         };
         submitOperands();
+
         //make operators work
         function submitOperator() {
             operators.forEach((operator)=> {
@@ -43,6 +48,7 @@ function calculatorProject(){
             })
         };
         submitOperator();
+
         //make equal/total work
         function eqaulButton(){
             equalBtn.addEventListener('click',()=>{
@@ -59,22 +65,22 @@ function calculatorProject(){
                         prevDisplay.textContent = "";
                     },2000)
                 } else if (operatorSign === '+'){
-                    prevDisplay.textContent = parseInt(operandsA) + parseInt(operandsB) ;
+                    prevDisplay.textContent = parseFloat(operandsA) + parseFloat(operandsB);
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
                 } else if (operatorSign === '-'){
-                    prevDisplay.textContent = parseInt(operandsA) - parseInt(operandsB);
+                    prevDisplay.textContent = parseFloat(operandsA) - parseFloat(operandsB);
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
                 } else if (operatorSign === '*'){
-                    prevDisplay.textContent = parseInt(operandsA) * parseInt(operandsB);
+                    prevDisplay.textContent = parseFloat(operandsA) * parseFloat(operandsB);
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
                 } else if (operatorSign === '/'){
-                    prevDisplay.textContent = parseInt(operandsA) / parseInt(operandsB);
+                    prevDisplay.textContent = parseFloat(operandsA) / parseFloat(operandsB);
                     currDisplay.textContent = "";
                     operandsA = prevDisplay.textContent;
                     operandsB = "";
@@ -82,10 +88,11 @@ function calculatorProject(){
             })
         };
         eqaulButton();
+
         //make clear work
         function clearButton(){
             clearBtn.addEventListener('click',()=>{
-                prevDisplay.textContent = "";
+                prevDisplay.textContent = "";s
                 currDisplay.textContent = "";
                 operandsA = "";
                 operandsB = "";
@@ -94,6 +101,7 @@ function calculatorProject(){
             })
         };
         clearButton();
+
         //make delete work
         function deleteButton() {
             deleteBtn.addEventListener('click',()=>{
@@ -109,6 +117,23 @@ function calculatorProject(){
             })
         }
         deleteButton();
+
+        //make decimal work
+        function decimalButton() {
+            decimalBtn.addEventListener('click',()=>{
+                if (!operatorSign){
+                    if(prevDisplay.textContent.includes(".")) return
+                    operandsA += decimalBtn.value;
+                    prevDisplay.textContent = operandsA;
+                }  
+                else if (operatorSign === "-"||operatorSign === "+"||operatorSign === "*"||operatorSign === "/"){
+                    if(currDisplay.textContent.includes(".")) return
+                    operandsB += decimalBtn.value;
+                    currDisplay.textContent = operandsB;
+                };
+            })
+        };
+        decimalButton();
     }
     allButtons();
 }
