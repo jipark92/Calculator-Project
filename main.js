@@ -92,7 +92,7 @@ function calculatorProject(){
         //make clear work
         function clearButton(){
             clearBtn.addEventListener('click',()=>{
-                prevDisplay.textContent = "";s
+                prevDisplay.textContent = "";
                 currDisplay.textContent = "";
                 operandsA = "";
                 operandsB = "";
