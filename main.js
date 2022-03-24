@@ -8,7 +8,7 @@ function calculatorProject(){
     const deleteBtn = document.querySelector('.delete-sign');
     const equalBtn = document.querySelector('.equal-sign');
     const decimalBtn = document.querySelector('.decimal-button');
-    
+
     //variables 
     let operandsA = "";
     let operatorSign = "";
@@ -115,7 +115,7 @@ function calculatorProject(){
                     operandsB = currDisplay.textContent;
                 }
             })
-        }
+        };
         deleteButton();
 
         //make decimal work
